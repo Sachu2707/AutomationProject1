@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="44703" started-at="2022-09-11T17:02:31 IST" finished-at="2022-09-11T17:03:16 IST">
+    <groups>
+      <group name="regression">
+        <method signature="ForgetPwd.Tc_01(java.lang.String,java.lang.String)[pri:1, instance:ForgetPwd@6121c9d6]" name="Tc_01" class="ForgetPwd"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="AutomationProj.Tc_01(java.lang.String,java.lang.String)[pri:1, instance:AutomationProj@a38d7a3]" name="Tc_01" class="AutomationProj"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="Test" duration-ms="44703" started-at="2022-09-11T17:02:31 IST" finished-at="2022-09-11T17:03:16 IST">
+      <class name="AutomationProj">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:AutomationProj@a38d7a3]" name="beforeSuite" is-config="true" duration-ms="8" started-at="2022-09-11T17:02:31 IST" finished-at="2022-09-11T17:02:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:AutomationProj@a38d7a3]" name="beforeTest" is-config="true" duration-ms="0" started-at="2022-09-11T17:02:31 IST" finished-at="2022-09-11T17:02:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:AutomationProj@a38d7a3]" name="beforeClass" is-config="true" duration-ms="7600" started-at="2022-09-11T17:02:31 IST" finished-at="2022-09-11T17:02:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:AutomationProj@a38d7a3]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-09-11T17:02:39 IST" finished-at="2022-09-11T17:02:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Tc_01(java.lang.String,java.lang.String)[pri:1, instance:AutomationProj@a38d7a3]" name="Tc_01" duration-ms="22492" started-at="2022-09-11T17:02:39 IST" data-provider="dp" finished-at="2022-09-11T17:03:01 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hakhilesh.chinnu@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chinnu123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_01 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:AutomationProj@a38d7a3]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-09-11T17:03:01 IST" finished-at="2022-09-11T17:03:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:AutomationProj@a38d7a3]" name="afterClass" is-config="true" duration-ms="0" started-at="2022-09-11T17:03:01 IST" finished-at="2022-09-11T17:03:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:AutomationProj@a38d7a3]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-09-11T17:03:16 IST" finished-at="2022-09-11T17:03:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:AutomationProj@a38d7a3]" name="afterSuite" is-config="true" duration-ms="1" started-at="2022-09-11T17:03:16 IST" finished-at="2022-09-11T17:03:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- AutomationProj -->
+      <class name="ForgetPwd">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:ForgetPwd@6121c9d6]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2022-09-11T17:02:31 IST" finished-at="2022-09-11T17:02:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:ForgetPwd@6121c9d6]" name="beforeTest" is-config="true" duration-ms="0" started-at="2022-09-11T17:02:31 IST" finished-at="2022-09-11T17:02:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:ForgetPwd@6121c9d6]" name="beforeClass" is-config="true" duration-ms="7245" started-at="2022-09-11T17:03:01 IST" finished-at="2022-09-11T17:03:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:ForgetPwd@6121c9d6]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-09-11T17:03:09 IST" finished-at="2022-09-11T17:03:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Tc_01(java.lang.String,java.lang.String)[pri:1, instance:ForgetPwd@6121c9d6]" name="Tc_01" duration-ms="7257" started-at="2022-09-11T17:03:09 IST" data-provider="dp" finished-at="2022-09-11T17:03:16 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hakhilesh.chinnu@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chinnu123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_01 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:ForgetPwd@6121c9d6]" name="afterClass" is-config="true" duration-ms="1" started-at="2022-09-11T17:03:16 IST" finished-at="2022-09-11T17:03:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:ForgetPwd@6121c9d6]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-09-11T17:03:16 IST" finished-at="2022-09-11T17:03:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:ForgetPwd@6121c9d6]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-09-11T17:03:16 IST" finished-at="2022-09-11T17:03:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:ForgetPwd@6121c9d6]" name="afterSuite" is-config="true" duration-ms="0" started-at="2022-09-11T17:03:16 IST" finished-at="2022-09-11T17:03:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- ForgetPwd -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
