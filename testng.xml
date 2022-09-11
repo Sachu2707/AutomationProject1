@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="AutomationProj"/>
-      <class name="ForgetPwd"/>
+      <class name="SendMsg"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

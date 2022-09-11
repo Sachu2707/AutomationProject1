@@ -22,21 +22,26 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
-public class ForgetPwd extends UserPage {
+public class SendMsg extends UserPage {
 	public WebDriver driver;
 	public String filepath=System.getProperty("user.dir");
 	public String url=null;
 	 private UserPage user = new UserPage();
 	 
-  @Test(dataProvider = "dp",priority = 1, groups = { "regression" })
-  public void Tc_01(String username, String password) throws InterruptedException {
+  @Test(dataProvider = "automation",priority = 1, groups = { "regression" })
+  public void Tc_01(String name, String email) throws InterruptedException {
 	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	  driver.findElement(By.xpath(txt_forgetpwd_xpath)).click();
-	  Thread.sleep(2000);
-	  driver.findElement(By.id(txt_UserName)).sendKeys(username);
-	  driver.findElement(By.xpath(txt_retrievpwd_xpath)).click();
-	  Thread.sleep(2000);
-	  System.out.println( driver.findElement(By.xpath(txt_alertmsg_xpath)).getText());
+	  driver.findElement(By.xpath(txt_Contacts)).click();
+	  System.out.println(driver.getTitle());
+	  Assert.assertTrue(driver.getTitle().contains("Contact"));
+	  
+	  driver.findElement(By.id(txt_Contacts_Name)).sendKeys(name);
+	  driver.findElement(By.id(txt_Contacts_Email)).sendKeys(email);
+	  driver.findElement(By.id(txt_Contacts_Comment)).sendKeys("Text");
+	  
+	  driver.findElement(By.xpath(txt_Contacts_Submit_xpath)).click();
+	  Thread.sleep(1000);
+	  Assert.assertTrue( driver.findElement(By.xpath(txt_Contacts_SuccessMsg)).isDisplayed());
 	  driver.close();
   }
    
@@ -50,9 +55,9 @@ public class ForgetPwd extends UserPage {
 
 
   @DataProvider
-  public Object[][] dp() {
+  public Object[][] automation() {
     return new Object[][] {
-      new Object[] { "Hakhilesh.chinnu@gmail.com", "Chinnu123" },
+      new Object[] { "Sample", "Sample@sample.com" },
     };
   }
   @BeforeClass
@@ -77,7 +82,7 @@ public class ForgetPwd extends UserPage {
 
   @BeforeSuite
   public void beforeSuite() {
-	  url="http://automationpractice.com/index.php?controller=authentication";
+	  url="https://automationpanda.com/";
   }
 
   @AfterSuite

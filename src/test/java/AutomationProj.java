@@ -31,31 +31,17 @@ public class AutomationProj extends UserPage {
   @Test(dataProvider = "dp",priority = 1, groups = { "smoke" })
   public void Tc_01(String username, String password) throws InterruptedException {
 	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	  driver.findElement(By.id(txt_UserName)).sendKeys(username);
-	  driver.findElement(By.id(txt_pwd)).sendKeys(password);
-	  driver.findElement(By.id(txt_Sigin)).click();
-	  Thread.sleep(3000);
+	  driver.findElement(By.xpath(txt_Speaking)).click();
 	  System.out.println(driver.getTitle());
-	  Assert.assertTrue(driver.getTitle().contains("My account"));
-	  driver.findElement(By.id(txt_Searchbox)).sendKeys("Printed Chiffon Dress");
-	  driver.findElement(By.xpath(txt_Searchbutton_xpath)).click();
-	  Thread.sleep(2000);
+	  Assert.assertTrue(driver.getTitle().contains("Speaking"));
+	  Assert.assertTrue(driver.findElement(By.xpath(txt_image)).isDisplayed());
 	  
-	  WebElement ele = driver.findElement(By.xpath("//li[@class='ajax_block_product col-xs-12 col-sm-6 col-md-4 first-in-line last-line first-item-of-tablet-line first-item-of-mobile-line last-mobile-line']"));
-	  //Creating object of an Actions class
-	  Actions action = new Actions(driver);
-
-	  //Performing the mouse hover action on the target element.
-	  action.moveToElement(ele).perform();
 	  
-	  Thread.sleep(1000);
-	  driver.findElement(By.xpath(txt_Searchitem1_xpath)).click();
-	  System.out.println(driver.findElement(By.xpath(txt_Searchitem1_text_xpath)).getText());
-	  driver.findElement(By.xpath(txt_Searchitem1_text_xpath)).getText();
-	  System.out.println(driver.findElement(By.xpath(txt_Successmsg_xpath)).getText());
-//	  Assert.assertTrue(driver.findElement(By.xpath(txt_Successmsg_xpath)).getText().contains("Product successfully added"));
-	  Thread.sleep(1000);
-	  driver.findElement(By.xpath(get_txt_Searcitem1_proceedtocheckout_xpath())).click();
+	  driver.findElement(By.xpath(txt_Books)).click();
+	  System.out.println(driver.getTitle());
+	  Assert.assertTrue(driver.getTitle().contains("Books"));
+	  Assert.assertTrue(driver.findElement(By.xpath(txt_image)).isDisplayed());
+	  
 	  driver.close();
   }
     
@@ -71,7 +57,7 @@ public class AutomationProj extends UserPage {
   @DataProvider
   public Object[][] dp() {
     return new Object[][] {
-      new Object[] { "Hakhilesh.chinnu@gmail.com", "Chinnu123" },
+      new Object[] { "Sample", "Sample" },
     };
   }
   @BeforeClass
@@ -96,7 +82,7 @@ public class AutomationProj extends UserPage {
 
   @BeforeSuite
   public void beforeSuite() {
-	  url="http://automationpractice.com/index.php?controller=authentication";
+	  url="https://automationpanda.com/";
   }
 
   @AfterSuite
