@@ -14,6 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
@@ -31,6 +32,7 @@ public class AutomationProj extends UserPage {
   @Test(dataProvider = "dp",priority = 1, groups = { "smoke" })
   public void Tc_01(String username, String password) throws InterruptedException {
 	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	  PageFactory.initElements(driver, this);
 	  driver.findElement(By.xpath(txt_Speaking)).click();
 	  System.out.println(driver.getTitle());
 	  Assert.assertTrue(driver.getTitle().contains("Speaking"));
